@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Zionism 101 Quiz</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link href="css/social-sharing.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link rel="icon" href="images/favicon.jpg">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="icon" href="images/favicon.jpg" />
 	<link href='http://fonts.googleapis.com/css?family=Lemon|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/app.js"></script>
@@ -14,38 +13,10 @@
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<meta property="og:title" content="Zionism 101 Quiz" />
 	<meta property="og:description" content="You've bought Israel Bonds, but do you really know your Zionism? Take this short colorful quiz about Israel's founding fathers and mothers to find out!" />
-	<meta property="og:image" content="images/Ben-Gurion_1.jpg" />
+	<meta property="og:image" content="http://edoecohen.com/apps/zionism-101/images/Ben-Gurion_1.jpg" />
 </head>
 
-<body>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '113701698644298',
-          xfbml      : true,
-          version    : 'v2.1'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
-	<div id="fb-root"></div>
-
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=113701698644298&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+<body>     
 
 <!-- RESTART GAME CONFIRMATION MODAL -->
 	<div class="modal fade" id="plsSubmitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -94,9 +65,11 @@
 							<img src="images/Herzl_2.jpg" class="exp-pic" />
 						</div>
 						<div class="col-md-7">						
-							<p class="modal-score">You've earned:
+							<p class="modal-score">
+								You've earned:
 								<img src="images/state_semel.png" />
-							20</p>
+								20
+							</p>
 							<p class="modal-answer">C. The Dreyfus Affair</p>
 							<p class="explain-text">In 1894, Captain Alfred Dreyfus, a Jewish officer in the French army, was unjustly accused of treason, mainly because of the prevailing anti-Semitic atmosphere.<br>
 							<br>
@@ -139,12 +112,8 @@
 							</p>
 							<div class="share">		
 								Share: 
-								<!-- Twitter -->
-								<a href="https://twitter.com/share" title="Share on Twitter" target="_blank" class="btn btn-twitter" data-url="http://edoecohen.com/apps/zionism-101/" data-text="Test your knowledge of Israel's founding fathers & mothers with this quick quiz:" data-via="edoecohen" data-count="none" data-hashtags="Zionism101">
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><i class="fa fa-twitter"></i>Twitter</a>
-								 
-								 <!-- Facebook -->
-								<div data-href="http://edoecohen.com/apps/zionism-101/" title="Share on Facebook" target="_blank" class="fb-share-button btn btn-facebook"><i class="fa fa-facebook"></i>Facebook</div>
+								<a href="https://www.facebook.com/sharer/sharer.php?u=http://edoecohen.com/apps/zionism-101/" target="_blank">Facebook</a>
+								<a href="https://twitter.com/share?url=http%3A%2F%2Fedoecohen.com%2Fapps%2Fzionism-101&text=Test%20your%20knowledge%20of%20Israel's%20founding%20fathers%20%26%20mothers%20with%20this%20quick%20quiz!%20via%20@omanoot%20#Zionism" title="Share on Twitter" target="_blank">Twitter</a>
 							</div>
 						</div>
 					</div>
@@ -160,12 +129,32 @@
 	</div><!-- /.modal -->
 
 
+<!-- INTRO SCREEN -->
+
+	<div class="container intro">
+	    <div class="row vertical-center-row">
+	        <div class="col-lg-12">
+	            <div class="row ">
+	                <div class="col-md-6 col-md-offset-3 intro-main">
+	                	<img class="intro-img" src="images/Israel_pin.jpg" />
+						<div class="intro-text">
+	                		<h1>Zionism 101 Quiz</h1>
+							<a href="">Yallah, let's start!</a>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
 <!-- NAVBAR WITH LOGO & SCORE -->
 	<div class="navbar navbar-static-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<div class="logo">
-					<img src="images/Israel_pin.jpg" />
+					<a href="http://www.omanoot.com/products/safety-israel-pin" target="_blank">
+						<img src="images/Israel_pin.jpg" /></a>
 					Zionism 101 Quiz
 				</div>
 				<ul class="nav-right">

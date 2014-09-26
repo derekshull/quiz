@@ -15,6 +15,15 @@ $(document).ready( function() {
 
 	resetCounters();
 
+	// INTRO SCREEN
+	
+	$('.intro-text a').on('click', function (event) {
+		event.preventDefault();
+		$('.intro').hide();
+		$('.navbar').show();
+		$('.main').show();
+	});
+
 
 	// CREATE ALL THE LEADERS OBJECTS
 
@@ -260,7 +269,7 @@ $(document).ready( function() {
 	 			$(".feedback").text("What would your bubby say!?");
 	 			break;
 	 		case 40:
-	 			$(".feedback").text("How will you ever find a Jewish husband / wife at this pace!?");
+	 			$(".feedback").text("You'll never find a nice Jewish husband / wife at this pace!");
 	 			break;
 			case 60:
 	 			$(".feedback").text("So you weren't drunk the whole Birthright trip afterall!");
@@ -274,6 +283,13 @@ $(document).ready( function() {
 	 	}
 	 	$("#endModal").modal({"show":"true"});
 	 };
+
+	$('#endModal').on('hidden.bs.modal', function () {
+		$('.intro').show();
+		$('.navbar').hide();
+		$('.main').hide();
+		resetGame();
+	});
 
 // END OF JAVASCRIPT
 });

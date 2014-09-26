@@ -2,7 +2,46 @@ body {
 	font-family: 'Cardo', serif;
 }
 
+/*** INTRO ***/
+.intro-main {
+	margin-top: 20%;
+}
+
+.intro-img {
+	float: left;
+	width: 130px;
+	margin-top: -50px;
+}
+
+.intro-text {
+	margin-top: 62px;
+	position: relative;
+}
+
+.intro-text h1 {
+	color: #656565;
+	font-family: 'Lemon', cursive;
+	font-size: 3em;
+	display: block;
+	margin-top: 20px;
+}
+
+.intro-text a {
+	color: black;
+	font-size: 1.5em;
+}
+
+.intro-text a:hover {
+	color: #428BCA;
+	text-decoration: none;
+}
+
+
 /*** HEADER ***/
+.navbar {
+	display: none;
+}
+
 .navbar-header {
 	margin-top: 15px;
 	width: 100%;
@@ -60,6 +99,7 @@ body {
 /*** MAIN BODY ***/
 .main {
 	margin-top: 30px;
+	display: none;
 }
 
 .leaderpic {
@@ -99,6 +139,7 @@ body {
 .dates {
 	float: right;
 	font-weight: bold;
+	margin-top: 5px;
 }
 
 .byline {
@@ -218,6 +259,21 @@ body {
 
 .feedback {
 	font-weight: bold;
+}
+
+.share {
+	font-size: 0.7em;
+	margin-top: 50px;
+}
+
+.share a {
+	color: #696969;
+	margin-left: 10px;
+}
+
+.share a:hover {
+	text-decoration: none;
+	color: #428BCA;
 }
 
 footer {
