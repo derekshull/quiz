@@ -4,22 +4,48 @@
 	<meta charset="UTF-8">
 	<title>Zionism 101 Quiz</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="icon" href="images/favicon.png">
+	<link href="css/social-sharing.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="icon" href="images/favicon.jpg">
 	<link href='http://fonts.googleapis.com/css?family=Lemon|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
-
-	<meta property="og:title" content="Test Title" />
-	<meta property="og:description" content="Test description" />
+	<meta property="og:title" content="Zionism 101 Quiz" />
+	<meta property="og:description" content="You've bought Israel Bonds, but do you really know your Zionism? Take this short colorful quiz about Israel's founding fathers and mothers to find out!" />
 	<meta property="og:image" content="images/Ben-Gurion_1.jpg" />
-
-
 </head>
 
 <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '113701698644298',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+	<div id="fb-root"></div>
+
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=113701698644298&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- RESTART GAME CONFIRMATION MODAL -->
 	<div class="modal fade" id="plsSubmitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -34,7 +60,6 @@
 			</div>
 		</div>
 	</div>
-
 
 
 <!-- RESTART GAME CONFIRMATION MODAL -->
@@ -87,6 +112,53 @@
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
+
+<!-- END OF GAME MODAL -->
+	<div class="modal fade" id="endModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" data-html="true">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">Game Over</h4>
+				</div>
+				<div class="modal-body mainexp">
+					<div class="row">
+						<div class="col-md-12 modal-end">
+							<p>
+								You correctly answered <span class="ansCorrect">3</span> out of 5 questions.
+							</p>
+							<p>
+								And you earned:
+								<img src="images/state_semel.png" />
+								<span class="scoreTotal">20</span>
+							</p>
+							<p class="feedback">
+								You're a real chalutz! When are we making aliya?
+							</p>
+							<div class="share">		
+								Share: 
+								<!-- Twitter -->
+								<a href="https://twitter.com/share" title="Share on Twitter" target="_blank" class="btn btn-twitter" data-url="http://edoecohen.com/apps/zionism-101/" data-text="Test your knowledge of Israel's founding fathers & mothers with this quick quiz:" data-via="edoecohen" data-count="none" data-hashtags="Zionism101">
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><i class="fa fa-twitter"></i>Twitter</a>
+								 
+								 <!-- Facebook -->
+								<div data-href="http://edoecohen.com/apps/zionism-101/" title="Share on Facebook" target="_blank" class="fb-share-button btn btn-facebook"><i class="fa fa-facebook"></i>Facebook</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer end-footer">
+					Want to play again?
+					<button type="button" class="btn btn-primary restart" data-dismiss="modal">
+						Yes!
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
 
 <!-- NAVBAR WITH LOGO & SCORE -->
 	<div class="navbar navbar-static-top" role="navigation">

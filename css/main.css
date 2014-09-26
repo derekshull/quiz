@@ -2,6 +2,7 @@ body {
 	font-family: 'Cardo', serif;
 }
 
+/*** HEADER ***/
 .navbar-header {
 	margin-top: 15px;
 	width: 100%;
@@ -55,6 +56,8 @@ body {
 	margin-top: -7px;
 }
 
+
+/*** MAIN BODY ***/
 .main {
 	margin-top: 30px;
 }
@@ -140,7 +143,6 @@ body {
 	cursor: pointer;
 }
 
-
 .bullet {
 	padding-right: 15px;
 }
@@ -158,6 +160,9 @@ body {
 .submit {
 	float: right;
 }
+
+
+/*** MODALS ***/
 
 .modal-title {
 	font-family: 'Lemon', cursive;
@@ -186,7 +191,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.modal-score img {
+.modal-score img, .modal-end img {
 	width: 30px;
 	margin-top: -7px;
 }
@@ -196,6 +201,22 @@ body {
 }
 
 .modal-answer {
+	font-weight: bold;
+}
+
+.modal-end {
+	font-size: 1.7em;
+}
+
+.end-footer {
+	font-size: 1.5em;
+}
+
+.end-footer button {
+	font-size: 1em;
+}
+
+.feedback {
 	font-weight: bold;
 }
 

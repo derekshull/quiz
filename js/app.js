@@ -177,7 +177,6 @@ $(document).ready( function() {
 	};
 
 	// SHOW MODAL
-
 	var showAnswer = function() {
 		$(".exp-pic").attr('src', leaders[rand].picture);
 		$(".explain-text").text(leaders[rand].explanation);
@@ -221,7 +220,7 @@ $(document).ready( function() {
 			newQuestion();
 		}
 		else {
-			alert("End of Game! You scored " + score + " Menorahs!");
+			endGame();
 		};
 	};
 
@@ -246,6 +245,35 @@ $(document).ready( function() {
 
 	// RESET ICON TOOLTIP
 	 $(".glyphicon").tooltip({placement: 'bottom'});
+
+	 // END OF GAME MODAL
+	 var endGame = function() {
+	 	$(".scoreTotal").text(score);
+	 	var rightAnswers = score / 20;
+	 	$(".ansCorrect").text(rightAnswers);
+	 	$(".modal-title").text("Game Over");
+	 	switch (score) {
+	 		case 0:
+	 			$(".feedback").text("You weren't paying any attention in Hebrew school, where you!?");
+	 			break;
+	 		case 20:
+	 			$(".feedback").text("What would your bubby say!?");
+	 			break;
+	 		case 40:
+	 			$(".feedback").text("How will you ever find a Jewish husband / wife at this pace!?");
+	 			break;
+			case 60:
+	 			$(".feedback").text("So you weren't drunk the whole Birthright trip afterall!");
+	 			break;
+			case 80:
+	 			$(".feedback").text("You bring us so much naches!");
+	 			break;
+	 		case 100:
+	 			$(".feedback").text("You're a real chalutz! When are you making aliya?");
+	 			break;
+	 	}
+	 	$("#endModal").modal({"show":"true"});
+	 };
 
 // END OF JAVASCRIPT
 });
