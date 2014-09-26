@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zionism 101 Quiz</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="images/favicon.png">
+	<link href='http://fonts.googleapis.com/css?family=Lemon|Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+
+	<meta property="og:title" content="Test Title" />
+	<meta property="og:description" content="Test description" />
+	<meta property="og:image" content="images/Ben-Gurion_1.jpg" />
+
+
+</head>
+
+<body>
+
+<!-- RESTART GAME CONFIRMATION MODAL -->
+	<div class="modal fade" id="plsSubmitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm" data-html="true">
+			<div class="modal-content">
+				<div class="modal-body">
+					Please select an answer before you submit.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Got it</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- RESTART GAME CONFIRMATION MODAL -->
+	<div class="modal fade" id="restartModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm" data-html="true">
+			<div class="modal-content">
+				<div class="modal-body">
+					Are you sure you want to restart?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary restart">Restart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- CORRECT / INCORRECT FEEDBACK AFTER SUBMIT MODAL -->
+	<div class="modal fade" id="ansModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" data-html="true">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+					</button>
+					<h4 class="modal-title">Correct!</h4>
+				</div>
+				<div class="modal-body mainexp">
+					<div class="row">
+						<div class="col-md-5 modal-pic">
+							<img src="images/Herzl_2.jpg" class="exp-pic" />
+						</div>
+						<div class="col-md-7">						
+							<p class="modal-score">You've earned:
+								<img src="images/state_semel.png" />
+							20</p>
+							<p class="modal-answer">C. The Dreyfus Affair</p>
+							<p class="explain-text">In 1894, Captain Alfred Dreyfus, a Jewish officer in the French army, was unjustly accused of treason, mainly because of the prevailing anti-Semitic atmosphere.<br>
+							<br>
+							Herzl witnessed mobs shouting “Death to the Jews” in France, the home of the French Revolution, and resolved that there was only one solution: the mass immigration of Jews to a land that they could call their own. Thus, the Dreyfus Case became one of the determinants in the genesis of Political Zionism.</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default next-quest" data-dismiss="modal">
+						Next Question
+					</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+<!-- NAVBAR WITH LOGO & SCORE -->
+	<div class="navbar navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="logo">
+					<img src="images/Israel_pin.jpg" />
+					Zionism 101 Quiz
+				</div>
+				<ul class="nav-right">
+					<li>
+						<span class="glyphicon glyphicon-refresh" data-toggle="tooltip" title="Restart"></span>
+					</li>
+					<li class="score">
+						<img src="images/state_semel.png" />
+						<span class="score-num">0</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container main">
+		<div class="row">
+<!-- LEADERS IMAGE -->
+			<div class="leaderpic col-md-6">
+				<a href="http://www.omanoot.com/products/theodore-herzl" target="_blank"><img class="leaderimg" src="images/Herzl_1.jpg"></a>
+				<a class="caption" href="http://www.omanoot.com/products/theodore-herzl" target="_blank">Illustration by Amit Shimoni</a>
+			</div>
+
+<!-- FORK IMAGE -->
+			<div class="rightsect col-md-6">
+				<div class="leadername">
+					<h1>Theodor Herzl</h1>
+					<span class="dates">1860-1904</span>
+				</div>
+
+				<div class="byline">
+					The visionary behind modern Zionism and the reinstitution of a Jewish homeland.
+				</div>
+				<div class="question">
+					<span class="question_header">Question</span><br>
+					<span class="thequestion">
+						Herzl was witness to an important world event that influenced his thinking and was the impetus to his involvement in Zionism. What was this event?
+					</span>
+				</div>
+				<ul id="options">					
+					<li class="not-selected">
+						<span class="bullet">A.</span>
+						<span class="answer">Russian Pogroms</span>
+					</li>
+					<li class="not-selected">
+						<span class="bullet">B.</span>
+						<span class="answer">The Dreyfus Affair</span>
+					</li>
+					<li class="not-selected">
+						<span class="bullet">C.</span>
+						<span class="answer">Electricity is invented</span>
+					</li>
+					<li class="not-selected">
+						<span class="bullet">D.</span>
+						<span class="answer">Destruction of the 2nd Temple</span>
+					</li>
+					<li class="not-selected">
+						<span class="bullet">E.</span>
+						<span class="answer">World War I</span>
+					</li>
+				</ul>
+
+				<div class="placement">
+					<div class="question-num">
+						<span class="current">1 </span> / 5
+					</div>
+					<button type="button" class="btn btn-default submit" data-dismiss="modal">
+						SUBMIT
+					</button>
+
+					<!-- div class="submit">
+						SUBMIT >>
+					</div -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer>
+		<p>© Edoe Cohen Productions 2014</p>
+	</footer -->
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

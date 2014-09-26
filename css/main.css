@@ -1,0 +1,209 @@
+body {
+	font-family: 'Cardo', serif;
+}
+
+.navbar-header {
+	margin-top: 15px;
+	width: 100%;
+}
+
+.logo {
+	color: #656565;
+	float: left;
+	font-family: 'Lemon', cursive;
+	font-size: 1.8em;
+}
+
+.logo img {
+	width: 40px;
+	margin-right: 10px;
+}
+
+.nav-right {
+	float: right;
+	list-style: none;
+	margin-top: 9px;
+}
+
+.nav-right li {
+	display: inline-block;
+}
+
+.glyphicon {
+	color: #3d3d3d;
+	margin-right: 15px;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+.glyphicon:hover {
+	color: #428BCA;
+}
+
+.score {
+	background: #f8fafc;
+	border: 1px solid #cacbcb;
+	color: #3d3d3d;
+	padding: 10px 15px;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 2.5em;
+}
+
+.score img {
+	width: 30px;
+	margin-top: -7px;
+}
+
+.main {
+	margin-top: 30px;
+}
+
+.leaderpic {
+	padding-left: 20px;
+}
+
+.leaderpic img {
+	width: 100%;
+}
+
+.caption {
+	color: black;
+	float: left;
+	font-size: 1.2em;
+	margin-top: 10px;
+}
+
+.caption:hover {
+	text-decoration: none;
+	color: #428BCA;
+}
+
+.rightsect {
+	font-size: 1.4em;
+}
+
+.rightsect h1 {
+	font-family: 'Lemon', cursive;
+	font-size: 2.5em;
+	margin: 0;
+}
+
+.leadername {
+	display: inline-block;
+}
+
+.dates {
+	float: right;
+	font-weight: bold;
+}
+
+.byline {
+	border-bottom: 1px solid #cacbcb;
+	margin: 15px 0;
+	padding-bottom: 20px;
+	color: #757575;
+}
+
+.question {
+	font-weight: bold;
+}
+
+.question_header {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+#options {
+	list-style: none;
+	line-height: 34px;
+	margin-top: 10px;
+}
+
+.selected, .selected:hover {
+	font-weight: bold;
+	color: #C41B1B;
+}
+
+.not-selected {
+	font-weight: normal;
+	color: black;
+}
+
+.not-selected:hover {
+	color: #428BCA;
+	font-weight: normal;
+}
+
+#options li:hover {
+	cursor: pointer;
+}
+
+
+.bullet {
+	padding-right: 15px;
+}
+
+.placement {
+	border-top: 1px solid #cacbcb;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+
+.question-num {
+	float: left;
+}
+
+.submit {
+	float: right;
+}
+
+.modal-title {
+	font-family: 'Lemon', cursive;
+	font-size: 3em;
+	margin-left: 30px;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.mainexp {
+	margin-left: 30px;
+}
+
+.modal-body {
+	font-size: 1.3em;
+}
+
+.modal-score {
+	font-size: 1.7em;
+	border-bottom: 1px solid #cacbcb;
+	padding-bottom: 20px;
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.modal-score img {
+	width: 30px;
+	margin-top: -7px;
+}
+
+.modal-pic img {
+    width: 100%;
+}
+
+.modal-answer {
+	font-weight: bold;
+}
+
+footer {
+	color: #F3F3F3;
+	margin-top: 10px;
+}
+
+footer p {
+	text-align: center;
+}
