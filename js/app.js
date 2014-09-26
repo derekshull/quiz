@@ -22,6 +22,7 @@ $(document).ready( function() {
 		$('.intro').hide();
 		$('.navbar').show();
 		$('.main').show();
+		$('footer').show();
 	});
 
 
@@ -227,6 +228,7 @@ $(document).ready( function() {
 			resetOptions();
 			counterInc();
 			newQuestion();
+			$('html, body').animate({ scrollTop: 0 }, 300);
 		}
 		else {
 			endGame();
@@ -288,6 +290,7 @@ $(document).ready( function() {
 		$('.intro').show();
 		$('.navbar').hide();
 		$('.main').hide();
+		$('footer').hide();
 		resetGame();
 	});
 

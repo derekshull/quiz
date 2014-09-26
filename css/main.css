@@ -277,10 +277,41 @@ body {
 }
 
 footer {
-	color: #F3F3F3;
-	margin-top: 10px;
+	color: #808080;
+	margin-top: 30px;
+	display: none;
+	height: 30px;
 }
 
 footer p {
 	text-align: center;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 991px) { 
+	.modal-pic {
+		margin-bottom: 30px;
+	}
+	.rightsect {
+		margin-top: 50px;
+	}
+	.foot {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 450px) {
+	.nav-right {
+		margin-top: -16px;
+	}
+	.glyphicon {
+		font-size: 1.1em;
+	}
+	.score {
+		font-size: 1.6em;
+	}
+	.score img {
+		width: 22px;
+	}
 }
