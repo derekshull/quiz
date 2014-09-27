@@ -100,20 +100,110 @@ $(document).ready( function() {
 		"images/Begin_1.jpg",
 		"http://www.omanoot.com/products/menachem-begin",
 		"Founder of the Likud party and the sixth Prime Minister of the State of Israel. Signed peace treaty with Egypt.",
-		" With whom did Begin share a Nobel Peace prize in 1979?",
+		"With whom did Begin share a Nobel Peace prize in 1979?",
 		["Jimmy Carter", "Margaret Thatcher", "Anwar Sadat", "Mahmoud Abbas ", "Yasser Arafat"],
 		"Anwar Sadat",
 		"images/Begin_2.jpg",
 		"The Camp David Accords were signed by Egyptian President Anwar El Sadat and Israeli Prime Minister Menachem Begin on 17 September 1978, following thirteen days of secret negotiations at Camp David. The two framework agreements were signed at the White House, and were witnessed by United States President Jimmy Carter. The second of these frameworks (A Framework for the Conclusion of a Peace Treaty between Egypt and Israel) led directly to the 1979 Egypt-Israel Peace Treaty. Due to the agreement, Sadat and Begin received the shared 1978 Nobel Peace Prize."
 	);
 
+	leaders[5] = new Person(
+		"Yitzhak Rabin",
+		"1922-1995",
+		"images/Rabin_1.jpg",
+		"http://www.omanoot.com/products/yitzhak-rabin",
+		"Fifth Prime Minister of Israel, serving two terms in office, 1974–77 and 1992 until his assassination in 1995. Brokered historic peace treaty with the PLO.",
+		"Between 1968-1973 Rabin served as Israel’s ambassador to which country?",
+		["Syria", "France", "Jordan", "USA", "Australia"],
+		"USA",
+		"images/Rabin_2.jpg",
+		"Following his retirement from the IDF Rabin became ambassador to the United States beginning in 1968, serving for five years. In this period the US became the major weapon supplier of Israel and in particular he managed to get the embargo on the F-4 Phantom fighter jets lifted. During the 1973 Yom Kippur War he served in no official capacity and in the elections held at the end of 1973 he was elected to the Knesset as a member of the Alignment."
+	);
+
+	leaders[6] = new Person(
+		"Ariel “Arik” Sharon",
+		"1928-2014",
+		"images/Sharon_1.jpg",
+		"http://www.omanoot.com/products/sharon",
+		"Israeli statesman, former Prime Minister and retired Major-General who served in the IDF for more than 25 years. In a controversial move, led Israel’s evacuation out of the Gaza Strip in 1995.",
+		"What battle in the 1948 War of Independence was Ariel Sharon badly injured in?",
+		["The Battles of Latrun", "Battle of the Beaufort", "Battle of Mount Hermon", "Operation Entebbe", "Operation Solomon"],
+		"The Battles of Latrun",
+		"images/Sharon_2.jpg",
+		"The Battles of Latrun were a series of military engagements between the Israel Defense Forces and the Jordanian Arab Legion on the outskirts of Latrun between 25 May and 18 July 1948, during the 1948 Arab–Israeli War. Ariel Sharon, the future Prime Minister of Israel, a lieutenant at the time, headed a platoon of the 32nd Battalion and suffered serious injury to his stomach during the battle. Many years later, Sharon tells about the battle in Latrun: \"This battle affected me in many ways, but first and foremost it affected me in regards to the subject of wounded soldiers in battle, as it was inevitable to abandon the wounded soldiers.\" As commander of the Paratroops and Unit 101, Israel’s first true elite force, he made it an ironclad rule that the injured never be left in the field."
+	);
+
+	leaders[7] = new Person(
+		"Shimon Peres",
+		"Born 1923",
+		"images/Peres_1.jpg",
+		"http://www.omanoot.com/products/shimon-peres",
+		"Ninth President of Israel from 2007 to 2014. Served twice as the Prime Minister of Israel and twice as Interim Prime Minister, and was a member of 12 cabinets in a political career spanning over 66 years.",
+		"Which governmental role did Shimon Peres not serve in?",
+		["President", "Prime Minister", "Minister of Finance", "Minister of Defense", "Minister of Education"],
+		"Minister of Education",
+		"images/Peres_2.jpg",
+		"Shimon Peres served as a Member of Knesset for 48 years, the longest term of service in the history of the Israeli Knesset. He served as Minister in 12 cabinets and served twice as Prime Minister (1984-1986, 1995-1996), Deputy Minister of Defense under Ben Gurion (1959-1965), Treasury Minister (1988-1990), Minister of Defense (1974-1977, 1995-1996), and Foreign Minister (1986-1988, 2001-2002). In 2007 Shimon Peres was elected to serve as the ninth President of the State of Israel."
+	);
+
+	leaders[8] = new Person(
+		"Rabbi Ovadia Yosef",
+		"1920-2013",
+		"images/Ovadia_1.jpg",
+		"http://www.omanoot.com/products/rabi-yosef-ovadia",
+		"Talmudic scholar, an authority on Jewish religious law, and the longtime spiritual leader of Israel's ultra-orthodox Shas party. Born in Iraq, he was the Sephardi Chief Rabbi of Israel from 1973 to 1983.",
+		"Which saying did Rabbi Ovadia Yosef make frequent use of?",
+		["\“Klieg, Klieg, Klieg-Du bist a Nar. You are smart, smart. smart – but you are not so smart!\”", "\“Restore past glory\”", "\“Infantry is the most, brother\” (קרבי זה הכי אחי)", "ֿֿֿ\“If I am not for myself who is for me? And being for my own self, what am 'I'? And if not now, when?ֿ\”", "\“There are no problems, only opportunities for growth.\”"],
+		"\“Restore past glory\”",
+		"images/Ovadia_2.jpg",
+		"Yosef frequently made use of the slogan \"Restore past glory\" (להחזיר עטרה ליושנה) as a metaphor embodying both his social and halakhic agenda. On a social level, it is widely viewed as a call to pursue a political agenda that will restore the pride of the Mizrahi Jews in Israeli society, which historically suffered from discrimination and were generally of a lower socio-economic status than their Ashkenazi counterparts. From a halakhic perspective, the metaphor is more complex. It is widely agreed by Rabbis and secular researchers alike that the 'Crown' of the metaphor refers to the halakhic supremacy which Yosef attaches to the rulings of Rabbi Yosef Karo."
+	);
+
+	leaders[9] = new Person(
+		"Shulamit Aloni",
+		"1928-2014",
+		"images/Aloni_1.jpg",
+		"http://www.omanoot.com/products/shulamit-aloni",
+		"Longtime left-wing Israeli minister and Parliament member who was an early champion of civil liberties, challenger of religious hegemony and Israeli settlements in Palestinian territories.",
+		"What was the name of the first political party that Aloni formed?",
+		["Ratz", "Peace Now", "Meretz", "Kadima", "Yesh Gvul"],
+		"Ratz",
+		"images/Aloni_2.jpg",
+		"Aloni joined the Mapai Party in 1959 and was first elected to Knesset in 1965. In 1973, she left the Labor Party and established Ratz (Citizens Right Movement), a political party advocating electoral reform, separation of religion and state, and a Basic Law protecting human rights. As Ratz leader, Aloni was elected to Knesset in 1973 and served continiously as head of Ratz until 1992. Before the 1992 elections, Aloni led Ratz into a coalition with Shinui and Mapam to form the new Meretz Party, which won 12 seats in the election."
+	);
+
+	leaders[10] = new Person(
+		"Yitzhak Shamir",
+		"1915-2012",
+		"images/Shamir_1.jpg",
+		"http://www.omanoot.com/products/shamir",
+		"Underground leader, spymaster, parliamentarian and the seventh Prime Minister of the State of Israel - was born Yizhak Yzernitzky in Ruzinoy, Poland.",
+		"Before the founding of the State of Israel, Shamir served as the principal director of operations of which underground paramilitary organization?",
+		["The Lehi", "Irgun Zvai Leumi", "Haganah", "Nili", "The IRA"],
+		"The Lehi",
+		"images/Shamir_2.jpg",
+		"Shamir served as Lehi's principal director of operations until 1946, when he was detained again by the British and exiled to a Britishrun prison camp in Eritrea. In 1947, he escaped from the camp as well, made his way to the neighboring French colony of Djibouti, and was later granted political asylum in France. Upon his return to Israel, Shamir took back his command of the Lehi, a position he would hold until the organization disbanded in 1949 after the formation of the Israel Defense Forces."
+	);
+
+	leaders[11] = new Person(
+		"Moshe Dayan",
+		"1915-1981",
+		"images/Dayan_1.jpg",
+		"http://www.omanoot.com/products/moshe-dayan",
+		"Moshe Dayan was an Israeli military leader who later became a crusader for peace. He played a key role in four wars and helped negotiate the Israel-Egypt peace treaty.",
+		"Dayan lost his left eye in battle with which country’s forces?",
+		["Vichy France", "Nazi Germany", "Lebanese Hizbollah", "Palestinian Hamas", "The Jordanian Army"],
+		"Vichy France",
+		"images/Dayan_2.jpg",
+		"On 7 June 1941, the night before the invasion of the Syria–Lebanon Campaign, Dayan's unit within a small Australian-Palmach-Arab reconnaissance task force crossed the border and secured two bridges over the Litani River. When they were not relieved as expected, at 04:00 on 8 June, the unit perceived that it was exposed to possible attack and — on its own initiative — assaulted a nearby Vichy police station, capturing it in a firefight. A few hours later, as Dayan was on the roof of the building using binoculars to scan enemy Vichy French positions on the other side of the river, they were struck by a French rifle bullet fired by a marksman from several hundred yards away, propelling metal and glass fragments into his left eye and causing it severe damage. Six hours passed before he could be evacuated, and he would have died if not for Bernard Dov Protter who took care of him until they were evacuated. Dayan lost the eye."
+	);
 
 	// PICK A RANDOM NUMBER AND TAKE IT OUT OF THE LIST
 
 	var values = [];
 
 	var genValues = function() {
-		for (var i = 0; i <= 4; i++ ){
+		for (var i = 0; i < leaders.length; i++ ){
 		    values.push(i);
 		};	
 	};
@@ -137,7 +227,7 @@ $(document).ready( function() {
 		// PLACE ANSWERS INTO HTML
 		var answer_values = [];
 
-		for (var i = 0; i <= 4; i++ ){
+		for (var i = 0; i < 5; i++ ){
 		    answer_values.push(i);
 		};
 
@@ -285,14 +375,6 @@ $(document).ready( function() {
 	 	}
 	 	$("#endModal").modal({"show":"true"});
 	 };
-
-	$('#endModal').on('hidden.bs.modal', function () {
-		$('.intro').show();
-		$('.navbar').hide();
-		$('.main').hide();
-		$('footer').hide();
-		resetGame();
-	});
-
+  
 // END OF JAVASCRIPT
 });

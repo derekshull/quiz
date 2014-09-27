@@ -251,10 +251,13 @@ body {
 
 .end-footer {
 	font-size: 1.5em;
+	font-style: italic;
 }
 
 .end-footer button {
 	font-size: 1em;
+	margin-left: 10px;
+	font-style: normal;
 }
 
 .feedback {
