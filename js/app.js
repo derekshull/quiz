@@ -4,6 +4,7 @@ $(document).ready( function() {
 	var counter;
 	var score;
 	var rand;
+	
 
 	// SET COUNTER AT 1;
 	var resetCounters = function() {
@@ -14,6 +15,7 @@ $(document).ready( function() {
 	}
 
 	resetCounters();
+
 
 	// INTRO SCREEN
 	
@@ -28,11 +30,10 @@ $(document).ready( function() {
 
 	// CREATE ALL THE LEADERS OBJECTS
 
-	function Person (name, dates, image, link, byline, question, answers, correct, picture, explanation) {
+	function Person (name, dates, image, byline, question, answers, correct, picture, explanation) {
 		this.name = name;
 		this.dates = dates;
 		this.image = image;
-		this.link = link;
 		this.byline = byline;
 		this.question = question;
 		this.answers = answers;
@@ -46,7 +47,6 @@ $(document).ready( function() {
 		"Theodor Herzl", 
 		"1860-1904",
 		"images/Herzl_1.jpg",
-		"http://www.omanoot.com/products/theodore-herzl",
 		"The visionary behind modern Zionism and the reinstitution of a Jewish homeland.",
 		"Herzl was witness to an important world event that influenced his thinking and was the impetus to his involvement in Zionism. What was this event?",
 		["Russian Pogroms", "The Dreyfus Affair", "Electricity is invented", "Destruction of the 2nd Temple", "World War I"],
@@ -59,7 +59,6 @@ $(document).ready( function() {
 		"David Ben Gurion",
 		"1886-1973",
 		"images/Ben-Gurion_1.jpg",
-		"http://www.omanoot.com/products/david-ben-gurion",
 		"The first Prime Minister of Israel and widely hailed as the State's main founder.",
 		"What was the name of the kibbutz where David Ben Gurion lived?",
 		["Yotvata", "Sde Dov", "Sde Boker", "Sde Nahum", "Ein Shemer"],
@@ -72,7 +71,6 @@ $(document).ready( function() {
 		"Golda Meir", 
 		"1898-1978", 
 		"images/Golda_1.jpg",
-		"http://www.omanoot.com/products/goldi",
 		"Israel's first and only female prime-minister. Ben-Gurion used to call Meir \"the best man in the government\"; she was often portrayed as the \"strong-willed, straight-talking, grey-bunned grandmother of the Jewish people\".",
 		"In which US city did Golda Meir grow up?",
 		["Milwaukee, Wisconsin", "Los Angeles, California", "Queens, New York", "Chicago, Illinois", "Seattle, Washington"],
@@ -85,7 +83,6 @@ $(document).ready( function() {
 		"Chaim Weizmann",
 		"1874-1952",
 		"images/Weizmann_1.jpg",
-		"http://www.omanoot.com/products/weizmann",
 		"Zionist leader and Israeli statesman who served as President of the Zionist Organization and later as the first President of Israel.",
 		"In addition to being an accomplished statesman, Chaim Weizmann was also a renown researcher and professor of:",
 		["Physics", "Philosophy", "History", "Chemistry", "Computer Science"],
@@ -98,7 +95,6 @@ $(document).ready( function() {
 		"Menachem Begin",
 		"1913-1992",
 		"images/Begin_1.jpg",
-		"http://www.omanoot.com/products/menachem-begin",
 		"Founder of the Likud party and the sixth Prime Minister of the State of Israel. Signed peace treaty with Egypt.",
 		"With whom did Begin share a Nobel Peace prize in 1979?",
 		["Jimmy Carter", "Margaret Thatcher", "Anwar Sadat", "Mahmoud Abbas ", "Yasser Arafat"],
@@ -111,7 +107,6 @@ $(document).ready( function() {
 		"Yitzhak Rabin",
 		"1922-1995",
 		"images/Rabin_1.jpg",
-		"http://www.omanoot.com/products/yitzhak-rabin",
 		"Fifth Prime Minister of Israel, serving two terms in office, 1974–77 and 1992 until his assassination in 1995. Brokered historic peace treaty with the PLO.",
 		"Between 1968-1973 Rabin served as Israel’s ambassador to which country?",
 		["Syria", "France", "Jordan", "USA", "Australia"],
@@ -124,7 +119,6 @@ $(document).ready( function() {
 		"Ariel “Arik” Sharon",
 		"1928-2014",
 		"images/Sharon_1.jpg",
-		"http://www.omanoot.com/products/sharon",
 		"Israeli statesman, former Prime Minister and retired Major-General who served in the IDF for more than 25 years. In a controversial move, led Israel’s evacuation out of the Gaza Strip in 1995.",
 		"What battle in the 1948 War of Independence was Ariel Sharon badly injured in?",
 		["The Battles of Latrun", "Battle of the Beaufort", "Battle of Mount Hermon", "Operation Entebbe", "Operation Solomon"],
@@ -137,7 +131,6 @@ $(document).ready( function() {
 		"Shimon Peres",
 		"Born 1923",
 		"images/Peres_1.jpg",
-		"http://www.omanoot.com/products/shimon-peres",
 		"Ninth President of Israel from 2007 to 2014. Served twice as the Prime Minister of Israel and twice as Interim Prime Minister, and was a member of 12 cabinets in a political career spanning over 66 years.",
 		"Which governmental role did Shimon Peres not serve in?",
 		["President", "Prime Minister", "Minister of Finance", "Minister of Defense", "Minister of Education"],
@@ -150,7 +143,6 @@ $(document).ready( function() {
 		"Rabbi Ovadia Yosef",
 		"1920-2013",
 		"images/Ovadia_1.jpg",
-		"http://www.omanoot.com/products/rabi-yosef-ovadia",
 		"Talmudic scholar, an authority on Jewish religious law, and the longtime spiritual leader of Israel's ultra-orthodox Shas party. Born in Iraq, he was the Sephardi Chief Rabbi of Israel from 1973 to 1983.",
 		"Which saying did Rabbi Ovadia Yosef make frequent use of?",
 		["\“Klieg, Klieg, Klieg-Du bist a Nar. You are smart, smart. smart – but you are not so smart!\”", "\“Restore past glory\”", "\“Infantry is the most, brother\” (קרבי זה הכי אחי)", "ֿֿֿ\“If I am not for myself who is for me? And being for my own self, what am 'I'? And if not now, when?ֿ\”", "\“There are no problems, only opportunities for growth.\”"],
@@ -163,7 +155,6 @@ $(document).ready( function() {
 		"Shulamit Aloni",
 		"1928-2014",
 		"images/Aloni_1.jpg",
-		"http://www.omanoot.com/products/shulamit-aloni",
 		"Longtime left-wing Israeli minister and Parliament member who was an early champion of civil liberties, challenger of religious hegemony and Israeli settlements in Palestinian territories.",
 		"What was the name of the first political party that Aloni formed?",
 		["Ratz", "Peace Now", "Meretz", "Kadima", "Yesh Gvul"],
@@ -176,7 +167,6 @@ $(document).ready( function() {
 		"Yitzhak Shamir",
 		"1915-2012",
 		"images/Shamir_1.jpg",
-		"http://www.omanoot.com/products/shamir",
 		"Underground leader, spymaster, parliamentarian and the seventh Prime Minister of the State of Israel - was born Yizhak Yzernitzky in Ruzinoy, Poland.",
 		"Before the founding of the State of Israel, Shamir served as the principal director of operations of which underground paramilitary organization?",
 		["The Lehi", "Irgun Zvai Leumi", "Haganah", "Nili", "The IRA"],
@@ -189,7 +179,6 @@ $(document).ready( function() {
 		"Moshe Dayan",
 		"1915-1981",
 		"images/Dayan_1.jpg",
-		"http://www.omanoot.com/products/moshe-dayan",
 		"Moshe Dayan was an Israeli military leader who later became a crusader for peace. He played a key role in four wars and helped negotiate the Israel-Egypt peace treaty.",
 		"Dayan lost his left eye in battle with which country’s forces?",
 		["Vichy France", "Nazi Germany", "Lebanese Hizbollah", "Palestinian Hamas", "The Jordanian Army"],
@@ -198,8 +187,8 @@ $(document).ready( function() {
 		"On 7 June 1941, the night before the invasion of the Syria–Lebanon Campaign, Dayan's unit within a small Australian-Palmach-Arab reconnaissance task force crossed the border and secured two bridges over the Litani River. When they were not relieved as expected, at 04:00 on 8 June, the unit perceived that it was exposed to possible attack and — on its own initiative — assaulted a nearby Vichy police station, capturing it in a firefight. A few hours later, as Dayan was on the roof of the building using binoculars to scan enemy Vichy French positions on the other side of the river, they were struck by a French rifle bullet fired by a marksman from several hundred yards away, propelling metal and glass fragments into his left eye and causing it severe damage. Six hours passed before he could be evacuated, and he would have died if not for Bernard Dov Protter who took care of him until they were evacuated. Dayan lost the eye."
 	);
 
-	// PICK A RANDOM NUMBER AND TAKE IT OUT OF THE LIST
 
+	// PICK A RANDOM NUMBER AND TAKE IT OUT OF THE LIST
 	var values = [];
 
 	var genValues = function() {
@@ -214,6 +203,7 @@ $(document).ready( function() {
 	};
 
 	chooseRand();
+
 
 	// NEW QUESTION - PLACE OBJECT INTO HTML
 	var newQuestion = function() {
@@ -238,17 +228,20 @@ $(document).ready( function() {
 	};
 	newQuestion();
 
+
 	// RESET ALL OPTIONS TO NON-SELECTED
 	var resetOptions = function() {
 		$('#options li').removeClass('selected').addClass('not-selected');
 		submission = "";
 	};
 
+
 	// MOVE QUESTION COUNTER FORWARD ONE
 	var counterInc = function() {
 		counter += 1;
 		$('.current').text(counter);
 	};
+
 
 	// WHEN USER CHOOSES AN ANSWER MARK IT & REMEMBER IT
 	$('.answer').on('click', function () {
@@ -270,11 +263,13 @@ $(document).ready( function() {
 	    }
 	});
 
+
 	// ADD 20 POINTS TO SCORE IF CORRECT
 	var addPoints = function() {
 		score += 20;
 		$('.score-num').text(score);
 	};
+
 
 	// SHOW MODAL
 	var showAnswer = function() {
@@ -311,6 +306,7 @@ $(document).ready( function() {
     	nextQuestion()
     });
 
+
 	// NEXT QUESTION FUNCTION
 	var nextQuestion = function() {
 		if (counter < 5) {
@@ -325,6 +321,7 @@ $(document).ready( function() {
 		};
 	};
 
+
 	// RESET GAME FUNCTION
 	var resetGame = function() {
 		resetCounters();
@@ -333,6 +330,7 @@ $(document).ready( function() {
 		chooseRand();
 		newQuestion();
 	};
+
 
 	// IF USER RESETS GAME
 	$('.glyphicon').on('click', function() {
@@ -344,8 +342,10 @@ $(document).ready( function() {
 		$("#restartModal").modal('hide');
 	});
 
+
 	// RESET ICON TOOLTIP
 	 $(".glyphicon").tooltip({placement: 'bottom'});
+
 
 	 // END OF GAME MODAL
 	 var endGame = function() {
