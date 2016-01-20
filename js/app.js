@@ -44,15 +44,15 @@ $(document).ready( function() {
 
 	var leaders = new Array();
 	leaders[0] = new Person(
-		"Theodor Herzl", 
-		"1860-1904",
-		"images/Herzl_1.jpg",
-		"The visionary behind modern Zionism and the reinstitution of a Jewish homeland.",
-		"Herzl was witness to an important world event that influenced his thinking and was the impetus to his involvement in Zionism. What was this event?",
-		["Russian Pogroms", "The Dreyfus Affair", "Electricity is invented", "Destruction of the 2nd Temple", "World War I"],
-		"The Dreyfus Affair",
-		"images/Herzl_2.jpg",
-		"In 1894, Captain Alfred Dreyfus, a Jewish officer in the French army, was unjustly accused of treason, mainly because of the prevailing anti-Semitic atmosphere. Herzl witnessed mobs shouting “Death to the Jews” in France, the home of the French Revolution, and resolved that there was only one solution: the mass immigration of Jews to a land that they could call their own. Thus, the Dreyfus Case became one of the determinants in the genesis of Political Zionism."
+		"Abraham Block", 
+		"1780?-1857",
+		"http://www.historicwashingtonstatepark.com/!userfiles/ABlock.jpg",
+		"The patriarch of the first documented Jewish family to immigrate to the state of Arkansas.",
+		"After a period as a businessman in Virginia, Block moved this familiy to where in search of new economic oppurtunities?",
+		["South Arkansas", "East Georgia", "Northeast Arkansas", "California", "Southwest Arkansas"],
+		"Southwest Arkansas",
+		"http://www.historicwashingtonstatepark.com/!userfiles/ABlock.jpg",
+		"Abraham Block was the patriarch of the first documented Jewish family to immigrate to the state of Arkansas. After a period as a businessman in Virginia, Block moved this familiy to southwest Arkansas in search of new economic oppurtunities."
 	);
 	
 	leaders[1] = new Person(
