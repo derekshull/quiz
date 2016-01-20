@@ -56,27 +56,27 @@ $(document).ready( function() {
 	);
 	
 	leaders[1] = new Person(
-		"Abraham Block", 
-		"1780?-1857",
-		"http://www.encyclopediaofarkansas.net/media/gallery/photo/AbrahamBlock_t.jpg",
-		"The patriarch of the first documented Jewish family to immigrate to the state of Arkansas.",
-		"After a period as a businessman in Virginia, Block moved this familiy to where in search of new economic oppurtunities?",
-		["South Arkansas", "East Georgia", "Northeast Arkansas", "California", "Southwest Arkansas"],
-		"Southwest Arkansas",
-		"http://www.historicwashingtonstatepark.com/!userfiles/ABlock.jpg",
-		"Abraham Block was the patriarch of the first documented Jewish family to immigrate to the state of Arkansas. After a period as a businessman in Virginia, Block moved this familiy to southwest Arkansas in search of new economic oppurtunities."
+		"Sarah Virginia Sanders", 
+		"",
+		"http://mattshull.com/beacon/washington/hwsp_beacon_img_sanders_tn.jpg",
+		"",
+		"Simon T. Sanders, the father of Sarah, held what position from 1839 - 1869?",
+		["County Judge", "County Clerk", "Sanitation Officer", "Lumberjack", "Gardener"],
+		"County Clerk",
+		"http://saa.org/Portals/0/SAA/PUBLIC/images/VaSandersheadDSC01223_w200.jpg",
+		"Simon and Zenobia Sanders joyfully celebrated the birth of a dughter, but probably were also apprehensive about the child's changes for survival. Infants were especially at risk and many did not live beyond their first two years."
 	);
 	
 	leaders[2] = new Person(
-		"Abraham Block", 
-		"1780?-1857",
-		"http://www.encyclopediaofarkansas.net/media/gallery/photo/AbrahamBlock_t.jpg",
-		"The patriarch of the first documented Jewish family to immigrate to the state of Arkansas.",
-		"After a period as a businessman in Virginia, Block moved this familiy to where in search of new economic oppurtunities?",
-		["South Arkansas", "East Georgia", "Northeast Arkansas", "California", "Southwest Arkansas"],
-		"Southwest Arkansas",
-		"http://www.historicwashingtonstatepark.com/!userfiles/ABlock.jpg",
-		"Abraham Block was the patriarch of the first documented Jewish family to immigrate to the state of Arkansas. After a period as a businessman in Virginia, Block moved this familiy to southwest Arkansas in search of new economic oppurtunities."
+		"B.W. Edwards", 
+		"",
+		"http://www.historicwashingtonstatepark.com/!userfiles/130117227181358286.jpg",
+		"",
+		"How many weapons were donated by B.W. Edwards?",
+		["Over 600", "Over 300", "Over 700", "42", "Over 1,000"],
+		"Over 600",
+		"http://www.historicwashingtonstatepark.com/!userfiles/130117227181358286.jpg",
+		"This former bank houses a large weapons exhibit including matchlocks, flintlocks, muskets, rifles, shotguns, revolvers, and Bowie knives. The majority of the items were collected by the late B.W. Edwards , a building contractor in Hope, Arkansas. Edwards donated his lifetime collection of over 600 weapons so that others could enjoy them on exhibit."
 	);
 	
 	
