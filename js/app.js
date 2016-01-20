@@ -255,15 +255,9 @@ $(document).ready( function() {
 	 			$(".feedback").text("Can't you do better than this!?");
 	 			break;
 	 		case 40:
-	 			$(".feedback").text("You'll never be an interpreter at this rate!");
-	 			break;
-			case 60:
 	 			$(".feedback").text("So you weren't daydreaming the whole trip afterall!");
 	 			break;
-			case 80:
-	 			$(".feedback").text("Almost a perfect score!  Awesome!");
-	 			break;
-	 		case 100:
+			case 60:
 	 			$(".feedback").text("You're a real history buff!  100%!");
 	 			break;
 	 	}
