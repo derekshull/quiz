@@ -46,7 +46,31 @@ $(document).ready( function() {
 	leaders[0] = new Person(
 		"Abraham Block", 
 		"1780?-1857",
+		"http://www.encyclopediaofarkansas.net/media/gallery/photo/AbrahamBlock_t.jpg",
+		"The patriarch of the first documented Jewish family to immigrate to the state of Arkansas.",
+		"After a period as a businessman in Virginia, Block moved this familiy to where in search of new economic oppurtunities?",
+		["South Arkansas", "East Georgia", "Northeast Arkansas", "California", "Southwest Arkansas"],
+		"Southwest Arkansas",
 		"http://www.historicwashingtonstatepark.com/!userfiles/ABlock.jpg",
+		"Abraham Block was the patriarch of the first documented Jewish family to immigrate to the state of Arkansas. After a period as a businessman in Virginia, Block moved this familiy to southwest Arkansas in search of new economic oppurtunities."
+	);
+	
+	leaders[1] = new Person(
+		"Abraham Block", 
+		"1780?-1857",
+		"http://www.encyclopediaofarkansas.net/media/gallery/photo/AbrahamBlock_t.jpg",
+		"The patriarch of the first documented Jewish family to immigrate to the state of Arkansas.",
+		"After a period as a businessman in Virginia, Block moved this familiy to where in search of new economic oppurtunities?",
+		["South Arkansas", "East Georgia", "Northeast Arkansas", "California", "Southwest Arkansas"],
+		"Southwest Arkansas",
+		"http://www.historicwashingtonstatepark.com/!userfiles/ABlock.jpg",
+		"Abraham Block was the patriarch of the first documented Jewish family to immigrate to the state of Arkansas. After a period as a businessman in Virginia, Block moved this familiy to southwest Arkansas in search of new economic oppurtunities."
+	);
+	
+	leaders[2] = new Person(
+		"Abraham Block", 
+		"1780?-1857",
+		"http://www.encyclopediaofarkansas.net/media/gallery/photo/AbrahamBlock_t.jpg",
 		"The patriarch of the first documented Jewish family to immigrate to the state of Arkansas.",
 		"After a period as a businessman in Virginia, Block moved this familiy to where in search of new economic oppurtunities?",
 		["South Arkansas", "East Georgia", "Northeast Arkansas", "California", "Southwest Arkansas"],
@@ -87,7 +111,7 @@ $(document).ready( function() {
 		// PLACE ANSWERS INTO HTML
 		var answer_values = [];
 
-		for (var i = 0; i < 5; i++ ){
+		for (var i = 0; i < 3; i++ ){
 		    answer_values.push(i);
 		};
 
@@ -179,7 +203,7 @@ $(document).ready( function() {
 
 	// NEXT QUESTION FUNCTION
 	var nextQuestion = function() {
-		if (counter < 5) {
+		if (counter < 3) {
 			chooseRand();
 			resetOptions();
 			counterInc();
