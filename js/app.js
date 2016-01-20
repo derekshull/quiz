@@ -111,7 +111,7 @@ $(document).ready( function() {
 		// PLACE ANSWERS INTO HTML
 		var answer_values = [];
 
-		for (var i = 0; i < 3; i++ ){
+		for (var i = 0; i < 5; i++ ){
 		    answer_values.push(i);
 		};
 
